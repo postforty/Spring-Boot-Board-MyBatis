@@ -1,12 +1,12 @@
-package board.service;
+package board.board.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import board.dto.BoardDto;
-import board.mapper.BoardMapper;
+import board.board.dto.BoardDto;
+import board.board.mapper.BoardMapper;
 
 @Service
 public class BoardServiceImpl implements BoardService {
