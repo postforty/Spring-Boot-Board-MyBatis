@@ -16,7 +16,6 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public List<BoardDto> selectBoardList() throws Exception {
-		
 		return boardMapper.selectBoardList();
 	}
 
