@@ -22,7 +22,7 @@ public class BoardController {
 	public ModelAndView openBoardList() throws Exception {
 		
 		ModelAndView mv = new ModelAndView("/board/boardList");
-		
+		int i = 10 / 0;
 		List<BoardDto> list = boardService.selectBoardList();
 		mv.addObject("list", list);
 		
