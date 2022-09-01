@@ -27,7 +27,6 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public BoardDto selectBoardDetail(int boardIdx) throws Exception {
 		boardMapper.updateHitCount(boardIdx);
-		int i = 10 / 0;
 		return boardMapper.selectBoardDetail(boardIdx);
 	}
 	
