@@ -5,6 +5,7 @@ create table insight.t_file (
     stored_file_path varchar(500) not null comment '파일 저장 경로',
     file_size int(15) unsigned not null comment '작성자 아이디',
     creator_id varchar(50) not null comment '작성시간',
+    created_datetime datetime not null comment '작성시간',
     updator_id varchar(50) default null comment '수정자 아이디',
     updated_datetime datetime default null comment '수정시간',
     deleted_yn char(1) not null default 'N' comment '삭제 여부',

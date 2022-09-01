@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 import board.board.dto.BoardDto;
 import board.board.service.BoardService;
-import lombok.extern.slf4j.Slf4j;
 
 @Controller
 public class BoardController {
@@ -35,8 +35,8 @@ public class BoardController {
 	}
 	
 	@RequestMapping("/board/insertBoard.do")
-	public String insertBoard(BoardDto board) throws Exception {
-		boardService.insertBoard(board);
+	public String insertBoard(BoardDto board, MultipartHttpServletRequest multipartHttpServletRequest) throws Exception {
+		boardService.insertBoard(board, multipartHttpServletRequest);
 		return "redirect:/board/openBoardList.do";
 	}
 	
