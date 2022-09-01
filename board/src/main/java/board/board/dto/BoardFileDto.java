@@ -1,5 +1,7 @@
 package board.board.dto;
 
+import java.util.List;
+
 import lombok.Data;
 
 @Data
@@ -9,4 +11,5 @@ public class BoardFileDto {
 	private String originalFileName;
 	private String storedFilePath;
 	private long fileSize;
+	private List<BoardFileDto> fileList;
 }
