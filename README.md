@@ -8,7 +8,6 @@
     + Language: Java
     + Dependencies
       + DevTools
-      + JPA
       + MySQL
       + MyBatis
       + Thymeleaf
